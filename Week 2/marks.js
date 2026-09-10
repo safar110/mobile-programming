@@ -11,7 +11,7 @@ function calculate() {
   var total = m1 + m2 + m3 + m4 + m5 + m6 + m7 + m8;
 
   var result = "";
-  var color = "black";
+  var color = "green";
 
   if (total > 600) {
     result = "Distinction";
@@ -21,7 +21,7 @@ function calculate() {
     color = "red";
   } else {
     result = "Pass";
-    color = "black";
+    color = "green";
   }
 
   document.getElementById("output").innerHTML =
