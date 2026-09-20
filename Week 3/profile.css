@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 24px 16px 48px;
+  background: #f2f4f7;
+  color: #1b1f24;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.5;
+}
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* ---------- profile card ---------- */
+#profile-card {
+  background: #fff;
+  color: #1b1f24;
+  border: 1px solid #d8dde5;
+  padding: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#profile-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  border: 3px solid #e5e7eb;
+}
+
+#student-name {
+  margin: 0 0 6px;
+  font-size: 1.4rem;
+}
+
+#student-bio {
+  color: #555;
+  margin: 0 0 14px;
+}
+
+#skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+#skills-list li {
+  background: #eef2f7;
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+/* ---------- classes toggled by jQuery ---------- */
+.highlighted {
+  border: 3px solid #f1c40f !important;
+  box-shadow: 0 0 14px rgba(241, 196, 15, 0.6);
+}
+
+.dark-mode {
+  background: #222 !important;
+  color: #eee !important;
+}
+.dark-mode #student-bio { color: #bbb; }
+.dark-mode #skills-list li { background: #3a3a3a; color: #eee; }
+
+.rounded {
+  border-radius: 50%;
+}
+
+.shadow {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+}
+
+/* ---------- controls ---------- */
+h3 {
+  margin: 18px 0 8px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #6b7280;
+}
+
+button {
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 7px 12px;
+  margin: 0 6px 6px 0;
+  cursor: pointer;
+  background: #fff;
+  color: #1b1f24;
+  border: 1px solid #d8dde5;
+  border-radius: 6px;
+}
+button:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+input {
+  font: inherit;
+  padding: 7px 10px;
+  border: 1px solid #d8dde5;
+  border-radius: 6px;
+  background: #fff;
+  color: #1b1f24;
+  width: 200px;
+  max-width: 100%;
+}
+
+#output {
+  margin-top: 18px;
+  padding: 12px 14px;
+  border: 1px dashed #d8dde5;
+  border-radius: 6px;
+  min-height: 22px;
+  background: #fff;
+  color: #1b1f24;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
